@@ -1,0 +1,9 @@
+{
+    "-W033": false,
+    "esversion": 9,
+    "node": true,
+    "globals": {
+        "app_config": true,
+        "plog": true
+      }
+}

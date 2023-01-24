@@ -1,0 +1,8 @@
+/node_modules
+/logs
+/package-lock.json
+/.vs
+.idea/
+config.js
+pm2.config.js
+.DS_Store
