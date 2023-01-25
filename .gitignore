@@ -6,3 +6,4 @@
 config.js
 pm2.config.js
 .DS_Store
+/.vscode
