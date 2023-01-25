@@ -1,10 +1,5 @@
 
 function initLogger() {
-    console.log(`=========================================`);
-    console.log(`APP Name:    ${process.env.npm_package_name}`);
-    console.log(`APP Version: ${process.env.npm_package_version}`);
-    console.log(`=========================================`);
-
     global.plog = require('./lib/global/log.js').createAppLogger();
 }
 
