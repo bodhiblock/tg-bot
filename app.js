@@ -35,7 +35,15 @@ function initMongodb() {
     mongoose.connect(app_config.mongodb, app_config.mongodb_options);
 }
 
+async function main() {
+    const TGBot = require('./lib/core/tgbot.js');
+    let tgbot = new TGBot(app_config.tgbot_username, app_config.tgbot_token);
+    tgbot.run();
+}
+
 initLogger();
 loadConfig();
 loadKoaApp();
 //initMongodb();
+
+main();

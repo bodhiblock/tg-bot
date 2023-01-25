@@ -17,6 +17,7 @@
   "license": "ISC",
   "dependencies": {
     "@pm2/io": "^5.0.0",
+    "axios": "^1.2.4",
     "bignumber.js": "^9.1.1",
     "date-utils": "^1.2.21",
     "koa": "^2.14.1",
@@ -24,7 +25,11 @@
     "koa-bodyparser": "^4.3.0",
     "koa-json": "^2.0.2",
     "mongoose": "^6.8.4",
+    "node-telegram-bot-api": "^0.61.0",
     "uuid": "^9.0.0",
     "winston": "^3.8.2"
+  },
+  "devDependencies": {
+    "@types/node-telegram-bot-api": "^0.57.6"
   }
 }
