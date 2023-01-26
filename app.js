@@ -29,7 +29,7 @@ function loadConfig() {
         let config = require('/config/config.js');
         for (let k in config) {
             config_default[k] = config[k];
-            plog.info("Overload config: " + k);
+            plog.info(`Overload GoogleCloudRun config: ${k} = ${config[k]}`);
         }
     }
 }
