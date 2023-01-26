@@ -2,6 +2,7 @@ console.log(`APP start`);
 
 function initLogger() {
     global.plog = require('./lib/global/log.js').createAppLogger();
+    plog.info(`Logger Setup OK`)
 }
 
 function loadKoaApp() {
