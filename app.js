@@ -1,3 +1,4 @@
+console.log(`APP start`);
 
 function initLogger() {
     global.plog = require('./lib/global/log.js').createAppLogger();
@@ -23,8 +24,8 @@ function loadConfig() {
         }
     }
 
-    if (fs.existsSync('/tg-bot/config.js')) {
-        let config = require('/tg-bot/config.js');
+    if (fs.existsSync('/config/config.js')) {
+        let config = require('/config/config.js');
         for (let k in config) {
             config_default[k] = config[k];
             plog.info("Overload config: " + k);
