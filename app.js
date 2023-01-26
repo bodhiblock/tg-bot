@@ -22,6 +22,14 @@ function loadConfig() {
             plog.info("Overload config: " + k);
         }
     }
+
+    if (fs.existsSync('/tg-bot/config.js')) {
+        let config = require('/tg-bot/config.js');
+        for (let k in config) {
+            config_default[k] = config[k];
+            plog.info("Overload config: " + k);
+        }
+    }
 }
 
 function initMongodb() {    
