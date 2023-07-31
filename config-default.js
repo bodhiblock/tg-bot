@@ -4,6 +4,10 @@ module.exports = {
     force_check_sign: false, // 开启API签名校验
     sign_debug: false, // 签名调试输出开关
     api_url: 'https://api.g.dog',
+    commands: {
+        '👤个人中心': 'my',
+        '📃今日榜单': 'board',
+    },
     mongodb: 'mongodb://127.0.0.1:27017/abc', // mongodb数据库配置
     mongodb_options: {
         auto_reconnect: true,
