@@ -1,4 +1,5 @@
 console.log(`APP start`);
+global.tools = require('./lib/global/tools.js');
 
 function initLogger() {
     global.plog = require('./lib/global/log.js').createAppLogger();
