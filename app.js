@@ -45,6 +45,7 @@ async function main() {
     const TGBot = require('./lib/core/tgbot.js');
     let tgbot = new TGBot(app_config.tgbot_username, app_config.tgbot_token);
     global.tg_bot = tgbot;
+    await tgbot.init();
     tgbot.run();
 }
 
