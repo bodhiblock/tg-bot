@@ -6,6 +6,8 @@ module.exports = {
     sign_debug: false, // 签名调试输出开关
     api_url: 'http://127.0.0.1:7117',
     commands: {
+        '/hot': '/hot',
+        '/summary': '/summary',
         '👤个人中心': 'my',
         '📃今日榜单': 'board',
     },
