@@ -8,6 +8,7 @@ module.exports = {
     commands: {
         '/hot': '/hot',
         '/summary': '/summary',
+        '/my': '/my',
         '👤个人中心': 'my',
         '📃今日榜单': 'board',
     },
